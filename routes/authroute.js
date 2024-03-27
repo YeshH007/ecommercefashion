@@ -12,7 +12,7 @@ route
         if (err) {
             console.log(err);
         } else {
-            res.send(str)
+            res.sendStatus(200).send(str)
         }
         });
 })
