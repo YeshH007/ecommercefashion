@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <img class="close" style="margin: 5px auto 5px 5px;"src="img/icons8-close-91.png" height="40px" width="40px" alt="">
+        <div class="cartitems">
+        </div>
+        <div class="priceing" style="color: white;">
+            <h2 class="totalprice" style="margin: 10px;">Total</h2>
+        </div>
+    </div>
+    <nav>
+        <ul class="productnav">
+            <div class="navi" style="z-index: 100000;"> 
+                <a href="/"><li class="navitems">Home</li></a>
+                <a href="/about"><li class="naviitems">About</li></a>
+            </div>
+            <div class="logocon"><li id="logo">ReThreadFasion</li></div>
+            <li style="margin-right: 25px;z-index: 99; display: flex; justify-content: center; align-items: center; " ><img src="img/icons8-fast-cart-60.png" height="40px" width="40px" id="cartbutton" alt=""></li>
+        </ul>
+    </nav>
+<div class="wrapper" style="background-color: lightgreen;">
+    <h1 style="color: darkgreen;">Checkout Form</h1>
+    <div class="formcontainer" >
+        <div class="formbox">
+            <form action="/checkoutform" method="post" class="checkoutform">
+               <div>
+                <label for="checkoutphone" style="color: darkgreen">Phone Number :</label>
+                <input style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px;" type="tel" name="phonenumber" required id="checkoutphone">
+               </div>
+
+                <h2 style="color: darkgreen" >Mode of Payment</h2>
+                <div>
+                    <label style="color: darkgreen; font-size:16px" for="checkoutpaymentmodecash">Cash</label>
+                    <input type="radio" class="checkoutpayment"  name="paymentmode" value="cash" id="checkoutpaymentmodecash">
+                </div>
+                <div>
+                    <label for="checkoutpaymentmodecard" style="color: darkgreen; font-size:16px">Online Payment</label>
+                    <input type="radio" class="checkoutpayment" name="paymentmode" value="card" id="checkoutpaymentmodecard">
+                </div>
+                <div id="addressdiv" style="display: none;">
+                    <label for="checkoutadress">Address:</label>
+                    <!-- <input type="" name="address" id="checkoutaddress"> -->
+                    <textarea style=" height: 150px; width: 450px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px; resize: none;" id="checkoutadress"  name="address"  rows="10" cols="50"></textarea>
+                </div>
+                <input type="hidden" name="cartitem" id="cartitemshidden" value="">
+                <input type="hidden" name="username" id="usernamehidden" value="">
+                <input type="hidden" name="email" id="emailhidden" value="">
+                <button type="submit" id="checkoutsubmit" name="action" value="cash" style="display: none;     margin: 10px;
+                height: 40px; width: 250px;
+                color: white; border-radius: 5px;
+                 font-size: 18px;
+                background-color: rgb(152, 240, 128);
+                border: 5px solid rgb(139, 220, 64);">Place Order</button>
+                <button id="stripepayment" type="submit" value="card" name="action" style="display:  none; margin: 10px;
+                height: 40px; width: 250px;
+                color: white; border-radius: 5px;
+                 font-size: 18px;
+                background-color: rgb(152, 240, 128);
+                border: 5px solid rgb(139, 220, 64); ">Proceed To Payments Page</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

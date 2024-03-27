@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="notif"></span>
+    <div class="sidebar">
+        <img class="close" style="margin: 5px auto 5px 5px;"src="img/icons8-close-91.png" height="40px" width="40px" alt="">
+        <div class="cartitems">
+        </div>
+        <div class="priceing" style="color: white;">
+            <h2 class="totalprice" style="margin: 10px;">Total</h2>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <nav>
+        <ul class="productnav">
+            <div class="navi" style="z-index: 100000;"> 
+                <a href="/"><li class="navitems">Home</li></a>
+                <a href="/about"><li class="naviitems">About</li></a>
+            </div>
+            <div class="logocon"><li id="logo">ReThreadFashion</li></div>
+            <div class="logindetails">
+                <li id="user-dropdown-button" style="margin-right: 25px;z-index: 99; display: flex; justify-content: center; align-items: center; border: 1px solid white;border-radius: 25px;z-index: 300; " ><img src="img/icons-logos-emojis-user-icon-png-transparent-11563566676e32kbvynug.png" height="40px" width="40px" id="userbutton" alt=""></li>
+            </div>
+            <li style="margin-right: 25px;z-index: 99; display: flex; justify-content: center; align-items: center; " id="cartbutton" ><img src="img/icons8-fast-cart-60.png" height="40px" width="40px"  alt=""></li>
+        </ul>
+    </nav>
+<% if(loginname && loginemail){ %>
+    <div id="user-dropdown-content" style="display: none; position: absolute; background-color: white; border: 1px solid black; border-radius: 5px; z-index: 100;" >
+        <p class="loginname">Name: <%= loginname %></p>
+        <p class="loginemail">Email: <%= loginemail %></p>
+    </div>
+<% } %>    
+    <main class="productmain">
+        <div class="settings">
+            <div class="searchcontent">
+                <input type="search" name="" id="search" placeholder="Search" >
+            </div>
+            <div class="categories">
+                <h2 style="text-align: center;">Categories</h2>
+                <ul class="categorylist">
+                    <li class="categorieitems" id="all">All</li>
+                    <li class="categorieitems" id="shirts">Shirt</li>
+                    <li class="categorieitems" id="s">Pants</li>
+                    <li class="categorieitems" id="skirts">Skirt</li>
+                    <li class="categorieitems" id="tshirts"> Tshirt</li>
+                    <li class="categorieitems" id="jeans">Jeans</li>
+                    <li class="categorieitems" id="jackets">Jacket</li>
+                </ul>
+            </div>
+            <div class="categoryprice" style="color: white;">
+                <h2 style="text-align: center; margin: 10px;">Price</h2>
+                <input type="range" name="" id="range"  >
+                <h3 class="under" style="text-align: center;">Under $ 0</h3>
+            </div>
+        </div>
+        <div class="products">
+            <% if(prodlist){ %>
+                <% prodlist.forEach((val)=>{ %>
+                    <div class="productcard" id= <%=val.id %>>
+                        <img src=<%= val.img %>  class="productimage">
+                        <h2 class="productname" style="margin: 5px;"><%=val.name%></h2>
+                        <h2 class="productprice" style="margin: 5px;"><%=val.price%></h2>
+                        <div class="productbuttons">
+                            <button class="productadd">Add</button>
+                        </div>
+                    </div>
+               <% }) %>
+            <% } %>  
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

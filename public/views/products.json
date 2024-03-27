@@ -1,0 +1,110 @@
+[
+    {
+      "id": "1",
+      "name": "Men's Blue T-Shirt",
+      "price": 24.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "This classic blue t-shirt is perfect for any casual occasion. Made with soft, comfortable fabric, it features a flattering fit and simple design. Pair it with jeans and sneakers for a relaxed look.",
+      "img": "img\\bluetshirt.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Women's Black Pants",
+      "price": 59.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Make a statement in this stunning black dress. Perfect for a night out or special occasion, it features a flattering silhouette and elegant design. Made with high-quality materials, this dress is both comfortable and stylish.",
+      "img": "img\\blackpant.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Men's  Polo Shirt",
+      "price": 29.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Stay cool and comfortable in this classic white polo shirt. Made with lightweight, breathable fabric, it features a stylish design and flattering fit. Perfect for a round of golf or a day out with friends.",
+      "img": "img\\polotshirt.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Women's Skirt",
+      "price": 34.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Add a pop of color to your wardrobe with this vibrant red blouse. Made with high-quality materials, it features a flattering fit and elegant design. Pair it with jeans or dress it up with a skirt for a chic look.",
+      "img": "img\\skirt.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Men's  Jeans",
+      "price": 49.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Stay stylish and comfortable in these classic black jeans. Made with high-quality denim, they feature a slim fit and timeless design. Perfect for a night out or casual day at the office.",
+      "img": "img\\jeans.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Blue Shirt",
+      "price": 39.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "This beautiful blue skirt is perfect for any occasion. Made with soft, flowy fabric, it features a flattering design and comfortable fit. Dress it up with heels or keep it casual with sandals.",
+      "img": "img\\bluetshirt.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Men's Hawaii Shirt",
+      "price": 44.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Stay cozy and stylish in this comfortable gray sweatshirt. Made with soft, warm fabric, it features a classic design and flattering fit. Perfect for a day of lounging or running errands.",
+      "img": "img\\Hawaiishirt.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Orange T-Shirt",
+      "price": 19.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "This simple white t-shirt is a must-have for any wardrobe. Made withsoft, breathable fabric, it features a relaxed fit and versatile design. Dress it up with a blazer or keep it casual with jeans and sneakers.",
+      "img": "img\\orangetshirt.jpg"
+      },
+      {
+      "id": "9",
+      "name": "Men's  Jacket",
+      "price": 99.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Stay warm and stylish in this classic brown leather jacket. Made with high-quality materials, it features a timeless design and comfortable fit. Perfect for a night out or casual day at the office.",
+      "img": "img\\jacket.jpg"
+      },
+      {
+      "id": "10",
+      "name": "Brown Pants",
+      "price": 49.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "These sleek black pants are a wardrobe essential. Made with high-quality materials, they feature a flattering fit and versatile design. Dress them up with heels or keep it casual with sneakers.",
+      "img": "img\\brownpants.webp"
+      },
+      {
+      "id": "11",
+      "name": "Men's Brown Tshirt",
+      "price": 34.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "This classic blue button-down shirt is perfect for any occasion. Made with soft, comfortable fabric, it features a timeless design and flattering fit. Dress it up with slacks or keep it casual with jeans.",
+      "img": "img\\browntshirt.jpg"
+      },
+      {
+      "id": "12",
+      "name": "Men's  Sweatpants",
+      "price": 29.99,
+      "quantity": 0,
+      "total_price": 0,
+      "description": "Stay cozy and stylish in this comfortable green sweater. Made with soft, warm fabric, it features a flattering fit and simple design. Perfect for a day of lounging or running errands.",
+      "img": "img\\sweatpants.jpg"
+      }
+]  

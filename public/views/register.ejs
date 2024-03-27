@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul class="homenav">
+            <div class="logocon">
+                <li id="logo">ReThreadFashion</li>
+            </div>
+        </ul>
+    </nav>
+    <main class="loginmain">
+        <form action="/register" method="post" class="loginform">
+            <div>
+                <label for="username" style="color: darkgreen;">User:</label>
+                <input style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px; "  type="text" required  name="username" id="registerusername">
+            </div>
+            <div>
+                <label for="useremail" style="color: darkgreen">Email:</label>
+                <input  style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px;"   type="email" required name="useremail" id="registeremail">
+            </div>
+            <div>
+                <label for="registerpassword" style="color: darkgreen">Password:</label>
+                <input style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px;" type="text" minlength="6" required name="registerpassword" id="registerpassword">
+            </div>
+            <% if(registermessage){ %>
+                <div class="registermessage" style="color: rgb(35, 34, 34);"><%= registermessage %> </div>
+            <% } %>
+            <div class="registerbuttons">
+                <button id="registerbutton" type="submit">Register</button>
+                <div style="color: darkgreen;"> Already have an account?<a href="/login" style='color:darkgreen'> Login now </a></div>
+            </div>
+        </form>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

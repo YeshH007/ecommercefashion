@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="adminwrapper">
+        <h1 style="color: white;">Admin Panel</h1>
+        <div class="orders">
+            <h2 style="color: white;"> Orders</h2>
+            <div class="orderscontainer">
+                <% if(orders){ %>
+                    <% orders.forEach((val)=>{ %>
+                        <div class="adminproductcard">
+                            <h4 class="adminproductcarddetails" style="margin: 10px;">Name:<%=val.username%></h4>
+                            <h4 class="adminproductcarddetails" style="margin: 10px;">Phone Number:<%=val.phonenumber%></h4>
+                            <h4 class="adminproductcarddetails" style="margin: 10px;">Email:<%=val.email%></h4>
+                            <h4 class="adminproductcarddetails" style="margin: 10px;">Address:<%=val.address%></h4>
+                            <h4 class="adminproductcarddetails" style="margin: 10px;">Payment Mode:<%=val.paymentmode%></h4>
+                            
+                            <h3 style="margin: 10px;">Products:</h3>
+                            <div class="adminproducts">
+                                
+                                <% val.cartitem.forEach((i)=>{ %>
+                                    <div class="productsdiv">
+                                        <div class="adminprod" id="adminprodname"><%=i.name%></div>
+                                        <img id="adminprodimage" height="130px" width="130px" src="<%=i.image%>">
+                                        <div class="adminprod" id="adminprodquant">Quantity:<%=i.quantity%></div>
+                                        <div class="adminprod" id="adminprodprice">Price: $<%=i.price%></div>
+                                    </div>
+                                <% }) %>    
+                            </div>
+                        </div>
+                   <% }) %>
+                <% } %>  
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

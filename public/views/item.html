@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: rgb(148, 253, 148)">
+    <div class="sidebar">
+        <img class="close" style="margin: 5px auto 5px 5px" src="img/icons8-close-91.png" height="40px" width="40px"
+            alt="" />
+        <div class="cartitems"></div>
+        <div class="priceing" style="color: white">
+            <h2 class="totalprice" style="margin: 10px">Total</h2>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <nav>
+        <ul class="productnav">
+            <div class="navi" style="z-index: 100000">
+                <a href="/">
+                    <li class="navitems">Home</li>
+                </a>
+                <a href="/login">
+                    <li class="naviitems">Products</li>
+                </a>
+                <a href="/about">
+                    <li class="naviitems">About</li>
+                </a>
+            </div>
+            <div class="logocon">
+                <li id="logo">ReThreadFashion</li>
+            </div>
+            <li style="
+            margin-right: 25px;
+            z-index: 99;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+                <img src="img/icons8-fast-cart-60.png" height="40px" width="40px" id="cartbutton" alt="" />
+            </li>
+        </ul>
+    </nav>
+    <main class="itemmain">
+        <img class="img" src="img\240_F_345059232_CPieT8RIWOUk4JqBkkWkIETYAkmz2b75 (2).jpg" alt="" />
+        <div class="iteminfo">
+            <h1 class="itemname" style="margin: 20px"></h1>
+            <h1 class="itemprice" style="margin: 20px"></h1>
+            <p class="itemdisc" style="margin: 20px"></p>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

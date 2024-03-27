@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <ul class="homenav">
+            <div class="logocon">
+                <li id="logo">ReThreadFashion</li>
+            </div>
+        </ul>
+    </nav>
+    <main class="loginmain">
+        <form action="/login" method="post" class="loginform">
+            <div>
+                <label for="loginemail" style="color: darkgreen;">Email:</label>
+                <input style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius:4px;"  type="email" required name="loginemail" id="loginemail">
+            </div>
+            <div>
+                <label for="loginpassword" style="color: darkgreen;">Password:</label>
+                <input style="height: 25px; width: 230px; padding:5px; font-size:16px; border:2px solid white; border-radius: 4px; " type="text" min="6" required name="loginpassword" id="loginpassword">
+            </div>
+           <% if(loginmessage){ %>
+            <div class="loginmessage"><%= loginmessage %></div>
+            <% } %>
+            <div class="loginbuttons">
+                <button id="loginbutton">Login</button>
+                <div style='color:darkgreen' >New to ReThreadFashion?<a href="/register" style='color:darkgreen'>Create new account</a></div>
+            </div>
+        </form>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
