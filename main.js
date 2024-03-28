@@ -28,6 +28,6 @@ mongoose.connect('mongodb+srv://yash:123@cluster0.dw6uqtt.mongodb.net/')
 })
 .catch((err)=>{console.log(err)})
 app.set('views', path.join(__dirname, 'views'))
-app.use(express.static(path.join(__dirname, 'public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(router);
 app.listen(process.env.PORT_NUMBER,()=>{console.log("server started")})
