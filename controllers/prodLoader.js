@@ -136,8 +136,8 @@ function image(reqitems){
             line_items:itemarr,
             payment_method_types:['card'],
             mode: 'payment',
-            success_url: 'https://fashion-ecommerce-chi.vercel.app/success.html',
-            cancel_url: 'https://fashion-ecommerce-chi.vercel.app/cancel.html',
+            success_url: 'https://ecommercefashion-9766.onrender.com/success.html',
+            cancel_url: 'https://ecommercefashion-9766.onrender.com/cancel.html',
           }); 
   res.redirect(303, session.url);
 }
