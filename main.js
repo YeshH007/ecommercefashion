@@ -34,5 +34,9 @@ app.get('/style.css', (req, res) => {
   res.header('Content-Type', 'text/css');
   res.sendFile(path.join(__dirname, 'public','views', 'style.css'));
 });
+app.get('/script.js', (req, res) => {
+  res.header('Content-Type', 'application/javascript');
+  res.sendFile(path.join(__dirname, 'public','views', 'script.js'));
+});
 app.use(router);
 app.listen(process.env.PORT_NUMBER,()=>{console.log("server started")})
