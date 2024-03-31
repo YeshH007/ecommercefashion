@@ -38,5 +38,9 @@ app.get('/script.js', (req, res) => {
   res.header('Content-Type', 'application/javascript');
   res.sendFile(path.join(__dirname, 'public','views', 'script.js'));
 });
+app.get('/products.json', (req, res) => {
+  res.header('Content-Type', 'application/json');
+  res.sendFile(path.join(__dirname, 'public','views', 'products.json'));
+});
 app.use(router);
 app.listen(process.env.PORT_NUMBER,()=>{console.log("server started")})
