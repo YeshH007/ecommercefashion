@@ -29,7 +29,7 @@ mongoose.connect('mongodb+srv://yash:123@cluster0.dw6uqtt.mongodb.net/')
 .catch((err)=>{console.log(err)})
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.static(path.join(__dirname, 'public')));
-app.set('/img', path.join(__dirname,'public', 'views','img'));
+app.use('/img', express.static(path.join(__dirname, 'public', 'views', 'img')));
 app.get('/style.css', (req, res) => {
   res.header('Content-Type', 'text/css');
   res.sendFile(path.join(__dirname, 'public','views', 'style.css'));
