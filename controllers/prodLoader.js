@@ -66,7 +66,7 @@ exports.checkoutformcash=async(req,res)=>{
           })
           let mailbody={
             from:process.env.GMAIL_ID,
-            to:'yashkalwani007@gmail.com',
+            to:req.body.email,
             subject:'Order Confirmation Details',
             text:`Dear ${req.body.username},
             Thank you for shopping with us! We are thrilled to confirm your recent order.Thank you for choosing us. 
@@ -117,7 +117,7 @@ function image(reqitems){
       })
       let mailbody={
         from:process.env.GMAIL_ID,
-        to:'yashkalwani007@gmail.com',
+        to:req.body.email,
         subject:'Order Confirmation Details',
         text:`Dear ${req.body.username},
         Thank you for shopping with us! We are thrilled to confirm your recent order.Thank you for choosing us. 
