@@ -295,7 +295,7 @@ categoryitems.forEach((e) => {
  
   
 
-    console.log(localStorage.cartitem)
+   
     function checkradio(){
       if(checkoutcash.checked){
         checkoutsubmit.style.display='block';
@@ -342,8 +342,7 @@ function userhidden(){
   usernamehidden.value=username;
   emailhidden.value=email;
 }
-console.log(items())
-userhidden()
+
 if(checkoutsubmitcardform){
   checkoutsubmitcashform.addEventListener('click',()=>{
     cartitemshidden.value=items()
