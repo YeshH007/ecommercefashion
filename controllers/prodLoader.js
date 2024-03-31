@@ -95,7 +95,7 @@ exports.checkoutformcash=async(req,res)=>{
             price_data:{
               currency:'usd',
               product_data:{name:item.name,images:image(reqitems)},
-              unit_amount:Number(item.price)*100,
+              unit_amount:Math.round(Number(item.price) * 100),
             },
             
             quantity:Number(item.quantity)
