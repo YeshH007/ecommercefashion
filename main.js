@@ -10,12 +10,6 @@ const stripe=require('stripe')
 require('dotenv').config();
 const session = require('express-session');
 
-app.use(session({
-    secret: '123455',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true }
-  }));
 app.use(express.json())
 app.enable('case sensitive routing');
 const bodyparser = require('body-parser');
