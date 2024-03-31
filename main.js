@@ -42,5 +42,13 @@ app.get('/products.json', (req, res) => {
   res.header('Content-Type', 'application/json');
   res.sendFile(path.join(__dirname, 'public','views', 'products.json'));
 });
+app.get('/success.html', (req, res) => {
+  res.header('Content-Type', 'text/html');
+  res.sendFile(path.join(__dirname, 'public','views', 'success.html'));
+});
+app.get('/cancel.html', (req, res) => {
+  res.header('Content-Type', 'text/html');
+  res.sendFile(path.join(__dirname, 'public','views', 'cancel.html'));
+});
 app.use(router);
 app.listen(process.env.PORT_NUMBER,()=>{console.log("server started")})
